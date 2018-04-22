@@ -1,31 +1,24 @@
 const { GraphQLServer } = require('graphql-yoga');
-
-const movies = [
-  {
-    id: 'movie01',
-    title: 'Matrix',
-
-  },
-  {
-    id: 'mvoie02',
-    title: 'Matrix Reloaded',
-  }, 
-  {
-    id: 'movie03',
-    title: 'Matrix Revolutions',
-  },
-];
+const movies = require('./data/movies');
+const studios = require('./data/studios');
 
 const resolvers = {
   Query: {
     allMovies: (root, args, context) => {
       return movies;
     },
-  }
+  },
+  Movie: {
+    studio: (root, args, context) => {
+      return studios.find(studio => {
+        return studio.movieIds.find(movieId => movieId === root.id);
+      })
+    },
+  } 
 };
 
 const server = new GraphQLServer({
-  typeDefs: 'schema/schema.graphql',
+  typeDefs: './schema/schema.graphql',
   resolvers,
 });
 
