@@ -19,3 +19,10 @@ type Cast {
 type Query {
   allMovies: [Movie!]
 }
+
+type Mutation {
+  createMovie(
+    title: String!
+  ): Movie
+
+}
