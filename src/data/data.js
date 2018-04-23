@@ -1,4 +1,29 @@
-module.exports = [
+const movies = [
+  {
+    id: 'movie01',
+    title: 'Matrix',
+  },
+  {
+    id: 'movie02',
+    title: 'Matrix Reloaded',
+  }, 
+  {
+    id: 'movie03',
+    title: 'Matrix Revolutions',
+  },
+];
+
+const studios = [{
+  id: "studio01",
+  name: "Warner Bross" ,
+  movieIds: [
+   "movie01",
+   "movie02",
+   "movie03", 
+  ]
+}]
+
+const casts = [
   {
     id: 'cast01',
     name: 'Keanu Reeves',
@@ -31,3 +56,10 @@ module.exports = [
     ]
   }
 ];
+
+module.exports = {
+  movies,
+  studios,
+  casts,
+}
+

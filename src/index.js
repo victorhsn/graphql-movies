@@ -1,7 +1,5 @@
 const { GraphQLServer } = require('graphql-yoga');
-const movies = require('./data/movies');
-const studios = require('./data/studios');
-const casts = require('./data/cast');
+const {movies, studios, casts } = require('./data/data');
 
 
 let movieIndex = movies.length;
