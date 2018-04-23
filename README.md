@@ -22,7 +22,7 @@ yarn install
 yarn start
 ```
 
-After installed the project will run the GraphQLServer at http://localhost:4000/ that you can access it from the browser to open the Playground and execute the Query/Mutation.
+It will run the GraphQLServer at http://localhost:4000/ that you can access it from the browser to open the Playground and execute the Query/Mutation as you can see below.
 
 ### Query
 ![Query](https://github.com/victorhsn/graphql-movies/blob/master/screenshots/graphql-playground.png)
