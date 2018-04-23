@@ -2,11 +2,18 @@ type Movie {
   id: ID!
   title: String!
   studio: Studio
+  cast: Cast
 }
 
 type Studio {
   id: ID!
   name: String!
+}
+
+type Cast {
+  id: ID!
+  name: String!
+  picture: String!
 }
 
 type Query {

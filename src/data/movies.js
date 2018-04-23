@@ -4,7 +4,7 @@ module.exports = [{
 
   },
   {
-    id: 'mvoie02',
+    id: 'movie02',
     title: 'Matrix Reloaded',
   }, 
   {
