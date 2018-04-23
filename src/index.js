@@ -1,6 +1,6 @@
 const { GraphQLServer } = require('graphql-yoga');
+const path = require('path');
 const {movies, studios, casts } = require('./data/data');
-
 
 let movieIndex = movies.length;
 
@@ -38,7 +38,7 @@ const resolvers = {
 };
 
 const server = new GraphQLServer({
-  typeDefs: './schema/schema.graphql',
+  typeDefs: __dirname + '/schema/schema.graphql',
   resolvers,
 });
 

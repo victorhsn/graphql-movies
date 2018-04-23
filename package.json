@@ -1,7 +1,9 @@
 {
   "name": "graphql-movies",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "repository": "https://github.com/victorhsn/graphql-movies.git",
   "author": "Victor Hugo Souza Nunes <hugo.hsn@gmail.com> (https://github.com/victorhsn)",
   "license": "MIT",
